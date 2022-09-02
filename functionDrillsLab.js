@@ -27,14 +27,18 @@ const jsNinja = () => {
 jsNinja()
 
 
-////////////////// PROBLEM 3 ////////////////////
+////////////////// PROBLEM3
+ ////////////////////
 /*
   Create a function called printName which takes in a person's name and console logs it.
   Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+function printName(personName) {
+  console.log(personName)
+}
+printName('Cameron')
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -47,9 +51,10 @@ jsNinja()
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
-
-
+function greeting(name) {
+  console.log('Hello,' + " " + (name))
+}
+greeting('Jake')
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -61,8 +66,19 @@ jsNinja()
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+const compareNums = (num1, num2) => {
+  if (num1 > num2) {
+    console.log(num1)
+    }
+  else if (num2 > num1) {
+    console.log(num2)
+  }
+  else if (num1 === num2) {
+    console.log(num1)
+  }
+  }
 
+compareNums(9, 4)
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -71,8 +87,14 @@ jsNinja()
   The add function should RETURN the two parameters added together.
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
+function add(para1, para2) {
+console.log(parseInt(para1 += para2))
+}
 
-//CODE HERE
+add (10, 4)
+
+
+
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -87,8 +109,8 @@ const exclaim = function(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
-// console.log('expression')
+console.log('declaration')
+//console.log('expression')
 
 
 
@@ -103,7 +125,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -113,7 +135,6 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -129,7 +150,7 @@ function exclaimFour(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -141,7 +162,19 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck(NAMEPARAM) {
+  if (NAMEPARAM === 'Steven') {
+    return('What is up Steven?')
+  }
+  else if (NAMEPARAM === 'Bryan') {
+    return('Hey Bryan')
+  }
+  else {
+    return('Cool name, (NAMEPARAM)')
+  }
+}
+var nameGreeting = nameCheck('Bryan')
+console.log(nameGreeting)
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -154,7 +187,23 @@ function exclaimFour(str) {
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color) {
+
+if (color === 'red') {
+  return('red is great color')
+}
+else if (color === 'green') {
+  return('Green is a solid favorite color')
+}
+else if (color === 'black') {
+  return('So trendy')
+}
+else {
+  return('You need to evaluate your favorite color choice')
+  }
+}
+var colorRating = faveColorFinder('blue')
+console.log(colorRating)
 
 
 ////////////////// PROBLEM 12 ////////////////////
@@ -165,8 +214,11 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
-
+function printAllNames(namesArr) {
+  for (let i = 0; i < namesArr.length, i++;)
+console.log(namesArr)
+}
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
